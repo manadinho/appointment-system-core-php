@@ -277,6 +277,11 @@
     .ps-btn:hover {
         opacity: 0.9;
     }
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
 </style>
 </head>
 <body>
@@ -285,7 +290,12 @@
     <div class="ps-main__wrapper">
     <section class="ps-card">
         <div class="ps-card__header">
-            <h3>Create Patient Form</h3>
+            <h3>
+                <a href="/show"><svg viewBox="0 0 120 100">
+                    <path d="M 20,50 l 100,0 M 20,50 l 30,28 M 20,50 l 30,-28" stroke="#000" stroke-linecap="round" stroke-width="6" /></svg>
+                </a> 
+                Create Patient Form
+            </h3>
         </div>
         <div class="ps-card__content section">
             <form class="ps-form--account-settings" id="case-history-form" action="/submit" method="post">

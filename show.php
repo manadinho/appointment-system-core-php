@@ -70,7 +70,7 @@ $patients = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </a>
         <div class="ps-section__actions new-patient-btn"><a class="ps-btn success" href="create.php"><i class="icon icon-plus mr-2"></i>New Patient</a></div>
     </div>
-<div class="table-responsive">
+<div class="container table-responsive">
     <table class="table ps-table" id="myDataTable">
         <thead>
             <tr class="smaller-fonts">
@@ -110,7 +110,7 @@ $patients = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <td>
                         <div class="dropdown">
                             <button class="btn btn-link p-0" type="button" id="patientActionsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-three-dots-vertical"></i> <!-- Bootstrap Icons ellipsis -->
+                                <i style="font-size: 15px !important;" class="bi bi-three-dots-vertical"></i> <!-- Bootstrap Icons ellipsis -->
                             </button>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="patientActionsDropdown">
                                 <li><a class="dropdown-item" href="/edit?id=<?= htmlspecialchars($patient['id']) ?>"><i class="bi bi-pencil me-2"></i> Edit</a></li>
