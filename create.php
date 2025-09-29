@@ -311,6 +311,21 @@
                 </div>
 
                 <!-- Personal Information -->
+                 <div class="row mb-n5">
+                    <div class="col-md-12">
+                    <div class="ps-form__submit" style="display: flex;justify-content: space-between;float: inline-end;">
+                            <div>
+                                <button type="button" class="ps-btn" id="prevBtn" onclick="prevSection()" style="display: none; position: relative;z-index: 1">Previous</button>
+                            </div>
+                            <div>
+                                <button type="submit" class="ps-btn success" style="position: relative;z-index: 1">Submit</button>
+                            </div>
+                            <div>
+                                <button type="button" class="ps-btn" id="nextBtn" onclick="nextSection()" style="display: block;float: right; position: relative;z-index: 1">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
                 <div class="tab active">
                     <h4>Personal Information</h4>
                     <div class="row">
@@ -616,19 +631,6 @@
                                 <textarea class="form-control" name="recommendations"></textarea>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Navigation Buttons -->
-                <div class="ps-form__submit" style="display: flex;justify-content: space-between;float: inline-end;">
-                    <div>
-                        <button type="button" class="ps-btn" id="prevBtn" onclick="prevSection()" style="display: none;">Previous</button>
-                    </div>
-                    <div>
-                        <button type="submit" class="ps-btn success">Submit</button>
-                    </div>
-                    <div>
-                        <button type="button" class="ps-btn" id="nextBtn" onclick="nextSection()" style="display: block;float: right;">Next</button>
                     </div>
                 </div>
             </form>
